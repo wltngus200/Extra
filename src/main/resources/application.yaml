@@ -1,0 +1,21 @@
+# DB 접속 정보
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost/board2024
+    username: root
+    password: green502
+
+# Mybatis 설정
+mybatis:
+  mapper-locations: mappers/*.xml
+
+#swagger 설정
+springdoc:
+  api-docs:
+    version: openapi_3_1 #스키마를 조금 다르게 나오게 하기 위함
+  swagger-ui:
+    path: /swagger
+  cache:
+    disabled: true
+  #springdoc아래 캐시

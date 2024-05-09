@@ -1,0 +1,11 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.boardextra.BoardMapper"><!--인터페이스 매퍼와 매칭시켜주는 것-->
+    <insert id="insBoard">
+        INSERT INTO board
+        (title, contents, writer)
+        VALUES
+        (#{title}, #{contents}, #{writer})
+    </insert>
+</mapper>
