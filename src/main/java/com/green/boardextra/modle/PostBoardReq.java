@@ -7,12 +7,15 @@ import lombok.ToString;
 @Getter //무조건 들어감
 @Setter //세터 VS 생성자 어느 것 이뮤터블(수정불가)의 문제
 @ToString
-public class PostBoardReq {
-    //insert 때는 Auto_increment, current_timestamp 는 신경 쓸 필요 없음
-    //아래 3개의 데이터를 프론트로부터 받아야 함
+public class PostBoardReq {//insert에 필요한 정보 모음 BODY
     private String title;
     private String contents;
     private String writer;
+
+
+    //insert 때는 Auto_increment, current_timestamp 는 신경 쓸 필요 없음
+    //아래 3개의 데이터를 프론트로부터 받아야 함
+
 
     //데이터를 백엔드로 보낼 때 쓸 수 있는 방법 (이걸로 보내라는 요구)
     //CRUD 무엇이든 사용 가능
